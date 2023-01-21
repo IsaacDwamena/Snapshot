@@ -17,9 +17,9 @@ const Cart = () => {
         <div className="panel1">
           <h1>Your cart:</h1>
           <div className="cartItems">
-            {productData.map((product, index) => {
+            {productData.map((product) => {
               if (items[product.id] !== 0) {
-                return <CartItem data={product} key={index} />;
+                return <CartItem data={product} key={product.id} />;
               }
             })}
           </div>

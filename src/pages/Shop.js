@@ -9,8 +9,8 @@ const Shop = () => {
   return (
     <motion.div variants={fade} className="shop" style={{ background: "#fff" }}>
       <ItemList>
-        {productData.map((product, index) => (
-          <Product data={product} key={index} />
+        {productData.map((product) => (
+          <Product data={product} key={product.id} />
         ))}
       </ItemList>
     </motion.div>
